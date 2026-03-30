@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>MonoMuse</title>
+
+</head>
+<body onload="addYear()">
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <img id="logo" src="./static/monomuselogo.jpg" alt="MonoMuse Museum Logo"> 
+    <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav_bar">
+    <a href="./index.html">Home</a>
+    <a href="views/tickets.html" class="cta">Buy Tickets</a>
+    <a href="views/explore.html">Explore</a>
+    <a href="views/exhibitions.html">Exhibitions</a>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main"> 
+
+    <p id="shortIntro">
+      Discover contemporary exhibitions and immersive experiences.
+    Immerse yourself in our diverse collection of monochromatic and contemporary art pieces.
+    </p>
+
+    <p id="longIntro" style="display:none;">
+      MonoMuse offers a curated selection of exhibitions that explore art,
+      technology, and human experience. Our collection features works from
+      emerging and established artists, showcasing innovative perspectives on
+      contemporary culture. Visit us to engage with thought-provoking installations
+      and discover unique artistic visions that challenge and inspire.
+      
+      Whether you're an art enthusiast, a curious explorer, or someone seeking 
+      inspiration, MonoMuse welcomes you to experience creativity in its most 
+      compelling forms. From interactive digital installations to traditional 
+      monochromatic masterpieces, our museum celebrates the intersection of art 
+      and innovation. Join our community and be part of a cultural movement that 
+      redefines what contemporary art can be.
+    </p>
+
+    <button id="readMore">Read More</button>
+    <button id="readLess" style="display:none;">Read Less</button>
+
+    <a href="views/tickets.html" class="ctab">Buy Tickets</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p id="copyYear"></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
