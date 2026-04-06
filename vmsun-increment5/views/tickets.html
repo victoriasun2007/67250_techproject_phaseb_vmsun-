@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+
+    <title>MonoMuse | Buy Tickets</title>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <h1 id="logo">⊰MonoMuse⊱</h1>
+        
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="support.html">Support</a>
+            <a href="tickets.html" class="cta">Buy Tickets</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+    </header>
+
+    
+
+    <main class="main"> 
+        <div id="buy">
+        <h2 class="greeting">Buy Tickets</h2>
+        </div>
+
+        <div class="body">
+
+        <div id="admission">
+        
+        <section id="pricing">
+    <h3>Pricing</h3>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+
+        <tr>
+            <td>Child (0-12)</td>
+            <td>$5.00</td>
+            <td><input type="number" min="0" max="10" value="0" id="childQty"></td>
+        </tr>
+
+        <tr>
+            <td>Senior (65+)</td>
+            <td>$10.00</td>
+            <td><input type="number" min="0" max="10" value="0" id="seniorQty"></td>
+        </tr>
+
+        <tr>
+            <td>Student</td>
+            <td>$15.00</td>
+            <td><input type="number" min="0" max="10" value="0" id="studentQty"></td>
+        </tr>
+
+        <tr>
+            <td>General</td>
+            <td>$25.00</td>
+            <td><input type="number" min="0" max="10" value="0" id="generalQty"></td>
+        </tr>
+
+        <tr>
+            <td>Member</td>
+            <td>$0.00</td>
+            <td><input type="number" min="0" max="10" value="0" id="memberQty"></td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="showForm()" class="buyNow">Continue</button>
+                
+</section>
+
+        
+        </div>
+
+        <section id="ticketCheckout">
+        <h3>Checkout</h3>
+
+        <div id="checkoutLayout">
+            
+            <div class="checkoutLeft">
+            <form id="ticketForm">
+                
+                <div class="checkoutBlock">
+                <h4>Information</h4>
+                <div class="twoCol">
+                    <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="twoCol">
+                    <div>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip" pattern="^\d{5}$" maxlength="5" title="Zip must be exactly 5 digits">
+                    </div>
+                    <div>
+                    <label for="visitDate">Visit Date</label>
+                    <input type="date" id="visitDate" name="visitDate" required>
+                    </div>
+                </div>
+                </div>
+
+                <div class="checkoutBlock">
+                <h4>Payment</h4>
+
+                <div class="twoCol">
+                    <div>
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" pattern="^\d{4} \d{4} \d{4} \d{4}$" maxlength="19" title="Card number must be in format: 1234 5678 9012 3456" required>
+                    </div>
+                    <div>
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="Name on card" required>
+                    </div>
+                </div>
+
+                <div class="twoCol">
+                    <div>
+                    <label for="expiry">Expiration Date</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" maxlength="5" title="Expiration date must be in format: MM/YY" required>
+                    </div>
+                    <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" pattern="^\d{3}$" maxlength="3" title="CVV must be exactly 3 digits" required>
+                    </div>
+                </div>
+
+                </div>
+
+                        <div>
+                        
+                        <label class="checkboxLabel"> 
+                            Join our mailing list
+                        </label>
+                        <input type="checkbox" id="mailingList" name="mailingList">
+                        </div>
+
+                <button type="submit" class="buyNow">Pay and Place Order</button>
+            </form>
+            </div>
+
+            <div class="checkoutRight">
+                <h4>Order Summary</h4>
+
+                <div class="summaryItem">
+                    <div>
+                    <p  class="imp">Museum Admission</p>
+                    <p  class="imp">Selected tickets:</p>
+                    <div id="selectedTicketsList"></div>
+                    </div>
+                    <span class="imp">Subtotal</span>
+                    <strong id="totalPrice">$0.00</strong>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid #444;">
+
+                <div class="summaryLine">
+                    <span class="imp">Total</span>
+                    <strong id="finalTotal">$0.00</strong>
+                </div>
+            </div>
+
+        </div>
+        </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

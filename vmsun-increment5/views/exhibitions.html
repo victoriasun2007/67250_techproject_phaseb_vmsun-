@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+
+    <link rel="stylesheet" href="../static/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+
+    <title>MonoMuse | Exhibitions</title>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <h1 id="logo">⊰MonoMuse⊱</h1>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="support.html">Support</a>
+            <a href="tickets.html" class="cta">Buy Tickets</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+    </header>
+
+    
+
+    <main class="main"> 
+        
+        <div id="exhibit">
+        <h2 class="greeting">Exhibitions</h2>
+        </div>
+
+        <div class="body">
+
+        <div class="exhibit-card">
+            <img src="../static/techMuseum.jpeg" alt="Digital Horizons exhibition">
+            <div class="exhibit-text">
+
+                <h3>Exhibition 1: Digital Horizons</h3>
+                <h4>February 15, 2026 - April 5, 2026</h4>
+                <p>
+                    Discover the future of art and technology at our latest exhibition.
+                    Explore interactive installations and immersive experiences that push
+                    the boundaries of creativity.
+                </p>
+                <a href="tickets.html" class="ctab">Buy Tickets</a>
+            </div>
+        
+        </div>
+
+        <div class="exhibit-card">
+            <img src="../static/programmingArtMuseum.webp" alt="Code as Art exhibition">
+            <div class="exhibit-text">
+                <h3>Exhibition 2: Code as Art</h3>
+                <h4>February 20, 2026 - June 5, 2026</h4>
+                <p>
+                    Experience the intersection of programming and visual expression in
+                    this unique showcase of digital art.
+                </p>
+                <a href="tickets.html" class="ctab">Buy Tickets</a>
+            </div>
+        
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

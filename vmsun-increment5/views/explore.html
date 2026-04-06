@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+
+    <title>MonoMuse | Explore</title>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <h1 id="logo">⊰MonoMuse⊱</h1>
+        
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="support.html">Support</a>
+            <a href="tickets.html" class="cta">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+    </header>
+
+    
+
+    <main class="main">
+        <div id="top">
+        <h2 class="greeting">Explore</h2>
+        </div>
+        
+        <div class="body">
+
+        <h3>Visit Us</h3>
+        <div id="address">
+            <div id="map">
+            </div>
+            <div id="bigInfo">
+                <h3>Information:</h3>
+                <p>123 Art Street, Pittsburgh, PA 15213</p>
+                <p>(412) 555-1234</p>
+                <p>monomuseum@monomuse.org</p>
+                <br>
+                <h3>Hours:</h3>
+                <table>
+                    
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>10:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>11:00 AM - 7:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="smallInfo">
+                <h3>Information:</h3>
+                <p>123 Art Street, Pittsburgh, PA 15213</p>
+                <p>(412) 555-1234</p>
+                <p>monomuseum@monomuse.org</p>
+                <br>
+                <h3>Hours:</h3>
+                <table>
+                    
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>10:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>11:00 AM - 7:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+        <div class="buy-tickets">
+        <a href="tickets.html" class="ctab">Buy Tickets</a>
+        </div>
+        <br>
+        
+
+        <h3>Mission</h3>
+        <p>Our mission is to inspire curiosity and creativity through the intersection of art, technology, and human experience.</p>
+        <br>
+        <h3>Milestones</h3>
+        <ul> 
+            <li>2020: MonoMuse opens its doors to the public with a groundbreaking inaugural exhibition.</li>
+            <li>2021: MonoMuse receives the prestigious Art and Technology Award for innovation in museum experiences.</li>
+            <li>2022: MonoMuse expands its digital collection, offering virtual tours and online exhibitions to a global audience.</li>
+            <li>2023: MonoMuse hosts its first annual Art and Tech Festival, attracting artists, technologists, and visitors from around the world.</li>
+        </ul> <br>
+
+        <h3>Who We Serve</h3>
+        <p>MonoMuse serves students, artists, researchers, families, and visitors interested in contemporary and digital art.</p>
+        <br>
+        <h3>Founding Year</h3>
+        <p>MonoMuse was founded in 2020.</p>
+        <br>
+        </div>
+        <div id="membershipSection">
+        
+    <h3>Membership and Donation</h3>
+    <p>Support MonoMuse through membership or a one-time donation. Your support helps fund exhibitions, public programs, and museum education.</p>
+    <ul>
+        <li>Member benefits include early exhibition access and event discounts.</li>
+        <li>Student memberships support affordable arts access.</li>
+        <li>Donations help sustain innovative museum programming.</li>
+    </ul>
+    <div class="buy-tickets">
+    <a href="support.html" class="ctab">Become a Supporter</a>
+    </div>
+</div>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Support MonoMuse through membership and donations">
+    <title>MonoMuse | Support</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <h1 id="logo">⊰MonoMuse⊱</h1>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="support.html">Support</a>
+            <a href="tickets.html" class="cta">Buy Tickets</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="supportHero">
+            <h2 class="greeting">Support MonoMuse</h2>
+        </div>
+
+        <div class="body">
+
+            <section class="support-section">
+                <h3>Membership</h3>
+                <p>
+                    Become a MonoMuse member and help support exhibitions, educational programs,
+                    and community events while enjoying special museum benefits.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Membership Type</th>
+                        <th>Price</th>
+                        <th>Benefits</th>
+                    </tr>
+                    <tr>
+                        <td>Student Member</td>
+                        <td>$25/year</td>
+                        <td>Discounted event access and museum updates</td>
+                    </tr>
+                    <tr>
+                        <td>Individual Member</td>
+                        <td>$60/year</td>
+                        <td>Free admission days and exhibition previews</td>
+                    </tr>
+                    <tr>
+                        <td>Family Member</td>
+                        <td>$100/year</td>
+                        <td>Family admission benefits and special programming</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="buy-tickets">
+            <button class="ctab" onclick="showMembershipForm()">Become a Member</button>
+            </div>
+            <div id="membershipForm" >
+                <form id="joinForm">
+                    <label for="memberType">Select Membership Type:</label>
+                    <select id="memberType" name="memberType" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="student">Student Member - $25/year</option>
+                        <option value="individual">Individual Member - $60/year</option>
+                        <option value="family">Family Member - $100/year</option>
+                    </select>
+
+                    <label for="memberName">Name:</label>
+                    <input type="text" id="memberName" name="memberName" placeholder="Your Name" required>
+
+                    <label for="memberEmail">Email:</label>
+                    <input type="email" id="memberEmail" name="memberEmail" placeholder="your@example.com" required>
+
+                    <label for="cNumber">Card Number:</label>
+                    <input type="text" id="cNumber" name="cardNumber" placeholder="1234 5678 9012 3456" pattern="^\d{4} \d{4} \d{4} \d{4}$" maxlength="19" title="Card number must be in format: 1234 5678 9012 3456" required>
+
+                    <label for="expiry">Expiration Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" maxlength="5" title="Expiration date must be in format: MM/YY" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cardCvv" inputmode="numeric" pattern="\d{3,4}" maxlength="4" placeholder="123" required>
+
+                    <button type="submit" class="buyNow">Subscribe</button>
+                </form>
+                
+            </div>
+            <div id="thankyou" style="display: none;">
+                    <h3>Thank You for Becoming a Member!</h3>
+                    <p>Your support helps us continue to create inspiring exhibitions and programs.</p>
+                </div>
+
+            <section class="support-section">
+                <h3>Donations</h3>
+                <p>
+                    Donations help MonoMuse continue to present innovative exhibitions and make
+                    art accessible to students, families, and the wider Pittsburgh community.
+                </p>
+
+                <ul>
+                    <li>$10 supports student learning materials</li>
+                    <li>$25 supports museum programming</li>
+                    <li>$50 supports exhibition development</li>
+                    <li>$100 supports community outreach events</li>
+                </ul>
+            </section>
+            <br>
+            <section class="support-section">
+                <h3>Why Support Matters</h3>
+                <p>
+                    Your support strengthens MonoMuses mission to connect art, technology,
+                    and human experience. Memberships and donations help us expand access,
+                    improve visitor experiences, and sustain future exhibitions.
+                </p>
+            </section>
+            <div class="buy-tickets">
+            <button class="ctab" onclick="showDonationForm()">Make a Donation</button>
+            </div>
+
+            <div id="supportForm">
+                <form id="donationForm">
+                    <label for="donationAmount">Donation Amount:</label>
+                    <input type="number" id="donationAmount" name="donationAmount" min="1" step="0.01" required>
+
+                    <label for="donorName">Name:</label>
+                    <input type="text" id="donorName" name="donorName" placeholder="Your Name" required>
+
+                    <label for="donorEmail">Email:</label>
+                    <input type="email" id="donorEmail" name="donorEmail" placeholder="your@example.com" required>
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" pattern="^\d{4} \d{4} \d{4} \d{4}$" maxlength="19" title="Card number must be in format: 1234 5678 9012 3456" required>
+
+                    <label for="cardExpiry">Expiration Date:</label>
+                    <input type="text" id="cardExpiry" name="expiry" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" maxlength="5" title="Expiration date must be in format: MM/YY" required>
+
+                    <label for="cardCvv">CVV:</label>
+                    <input type="text" id="cardCvv" name="cardCvv" inputmode="numeric" pattern="\d{3,4}" maxlength="4" placeholder="123" required>
+
+                    <button type="submit" class="buyNow">Donate</button>
+                </form>
+                <div id="thanks" style="display: none;">
+                    <h3>Thank You for Your Support!</h3>
+                    <p>Your donation helps us continue to create inspiring exhibitions and programs.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
