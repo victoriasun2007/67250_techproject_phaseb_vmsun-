@@ -1,0 +1,730 @@
+* {
+  padding: 5px;
+  margin: 5px;
+  background: #0b0b0c;
+  color: #f5f5f7;
+
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+}
+h2, h3 {
+  font-family: "Instrument Serif", serif;
+  font-size: 200%;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  text-align: center; 
+  background-image: linear-gradient(
+      	rgba(0, 0, 0, 0.7),
+      	rgba(0, 0, 0, 0.7)
+    	),url('museumOutside.jpg');
+  background-position: center;
+  height: 650px;
+  margin-bottom: 50px;
+}
+#top {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  text-align: center; 
+  background-image: linear-gradient(
+      	rgba(0, 0, 0, 0.7),
+      	rgba(0, 0, 0, 0.7)
+    	),url('museum.jpg');
+  background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+#exhibit {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  text-align: center; 
+  background-image: linear-gradient(
+      	rgba(0, 0, 0, 0.7),
+      	rgba(0, 0, 0, 0.7)
+    	),url('exhibitMuseum.jpg');
+  background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+#buy {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  text-align: center; 
+  background-image: linear-gradient(
+      	rgba(0, 0, 0, 0.7),
+      	rgba(0, 0, 0, 0.7)
+    	),url('buyMuseum.jpg');
+  background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+
+#supportHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url('museum.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+
+
+#greeting {
+  background: None;
+  font-size: 50px;
+  
+}
+.greeting {
+  background: None;
+  font-size: 50px;
+  color: #f5f5f7;
+}
+#shortIntro {
+  background: None;
+  font-size: 20px;
+  width: 50%;
+}
+#logo {
+  font-family: 'Instrument Serif', serif;
+  font-size: 60px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+
+h2 {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+#readMore, .buyNow, #readLess {
+  text-decoration: none;
+  border-radius: 20px;
+  
+  padding: 10px 25px;
+  font-weight: 600;
+
+  display: inline-block;  
+  width: fit-content;  
+  margin-bottom: 30px;
+}
+.buyNow {
+  margin-bottom: 0;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.154);
+  border-bottom: 1px solid #fcc2e6;
+  }
+.active {
+  color: #ff4ab0;
+  border-bottom: 1px solid #fcc2e6;
+}
+
+.nav_bar .icon {
+  display: none;
+}
+
+.cta {
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: 600;
+
+  display: inline-block;  
+  width: fit-content;     
+}
+.ctab{
+  color:#0b0b0c;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #fcc2e6d8;
+  padding: 11px 25px;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+  display: block;  
+  width: 90%;     
+}
+.ctab:hover {
+  background-color: #ff4ab0;
+  color:#f5f5f7
+}
+
+.planVisit {
+  color: #fcc2e6;
+  font-style: italic;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #cfcfcf50;
+  padding: 10px 60px;
+  font-weight: 600;
+  font-size: 25px;
+
+  margin-top: 15px;
+
+  display: block;  
+  width: fit-content;     
+}
+.planVisit:hover {
+  background-color: #ff4ab1dc;
+  color:#f5f5f7
+}
+footer {
+  border-top: 1px solid rgba(245,245,247,.12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(245,245,247,.72);
+  }
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  border-bottom:1px solid rgb(91, 91, 91);
+  font-size: 110%;
+}
+table {
+  border-collapse: collapse;
+  width:100%;  
+}
+td{
+  border-bottom: 1px solid rgb(71, 71, 71);
+}
+table {
+  
+  margin: auto;
+  margin-bottom: 15px
+}
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  grid-area: header;
+}
+.nav_bar {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+#selectedTicketsList {
+  margin-top: 10px;
+}
+
+#selectedTicketsList .summaryLine {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 120%;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#finalTotal {
+  font-weight: 400;
+  background-color: #393939;
+}
+.imp{
+  font-weight: 400;
+}
+
+#donationForm {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+#donationForm input, #joinForm input, #donationForm select, #joinForm select {
+  border-radius: 10px;
+  margin: 5px;
+  width: 50%;
+}
+#joinForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#membershipForm {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#thanks, #thankyou{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border: #3d3d3f solid 1px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#ticketCheckout {
+  display: none;
+}
+
+#checkoutLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkoutLeft {
+  flex: 0 70%;
+}
+.checkoutRight {
+  flex: 0 30%;
+}
+.checkoutBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#ticketForm select, #ticketForm input {
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 20px;
+}
+#ticketForm input {
+  width: 50%;
+  min-width: fit-content;
+}
+#ticketForm label, #ticketForm legend {
+  font-weight: 400;
+  margin-left: max(4px, 3%);
+}
+#ticketForm select {
+  text-align: left;
+  width: 30%;
+  min-width: fit-content;
+}
+.checkboxLabel {
+  display: inline-block;
+  justify-self: start;
+  font-weight: 400;
+
+}
+
+
+#mailingList {
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px !important;
+}
+.buyNow {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #fcc2e6ca;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #000;
+  display: block;  
+  width: fit-content;     
+}
+.buyNow:hover {
+  background-color: #ff4ab0;
+  color: #f5f5f7;
+}
+.buyForm {
+  
+  border-radius: 20px;
+  
+  padding: 10px 20px;
+  width: 80%;
+  
+}
+
+.exhibit-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.exhibit-card img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.exhibit-text {
+  flex: 1;
+  max-width: 600px;
+  
+}
+
+#admission {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+
+}
+
+#pricing h3 {
+  margin-bottom: 20px;
+  
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 12px;
+  color: #0b0b0c;
+}
+#map * {
+    background: transparent;
+    color: black;
+    font-weight: 400;
+}
+
+/* Specific fix for the Leaflet container to ensure the map tiles show */
+.leaflet-container {
+    background-color: #f5f5f7 !important;
+}
+
+/* Fix for the popup text color which might be invisible now */
+.leaflet-popup-content {
+    color: #0b0b0c; 
+}
+
+#address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  justify-content: flex-start;
+}
+#smallInfo {
+  display: none;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+#intro-image {
+  width: 100%;
+  max-width: 50%;
+  aspect-ratio: 14 / 9;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.buy-tickets {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+}
+.galleryBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+#galleryImage {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  object-fit: cover; /* Keeps images from stretching */
+  border-radius: 15px;
+}
+
+.galleryBtn {
+  
+  color: #fcc2e6;
+  border: none;
+  padding: 2px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.galleryBtn:hover {
+  background-color: #ff4ab0;
+  color: #f5f5f7;
+}
+hr {
+  border: 0;
+  margin: 30px auto;
+}
+#membershipSection {
+  font-size: 110%;
+}
+table input {
+  border-radius: 10px;
+  padding: 2px;
+  margin: 3px;
+  width:20%;
+  min-width: 20px;
+}
+
+@media screen and (max-width:1050px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    padding-top: 30px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #welcome #shortIntro {
+    display: none;
+  }
+
+  #welcome, #top, #exhibit, #buy {
+    height: 300px;
+    background-size: cover;
+  }
+  .active {
+    color: #ff4ab0;
+  }
+
+  .nav_bar {
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    gap: 0;
+  }
+
+  
+  .nav_bar a {
+    display: none;
+  }
+
+  
+  .nav_bar a.active {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav_bar a.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 0;
+    font-size: 28px;
+    color: #f5f5f7;
+  }
+
+  
+  .nav_bar.responsive {
+    padding-top: 50px; 
+  }
+
+  
+  .nav_bar.responsive a.active {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav_bar.responsive a.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  
+  .nav_bar.responsive a:not(.active):not(.icon) {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: left;
+    margin: 0;
+  }
+  .nav_bar.responsive {
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start;  
+  }
+  #logo {
+    font-size: 42px;
+  }
+
+  #shortIntro {
+    width: 85%;
+    font-size: 18px;
+  }
+
+  .exhibit-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .exhibit-card img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  table {
+    width: 100%;
+  }
+  #greeting, .greeting {
+    font-size: 30px;
+  }
+  .body {
+    margin:max(25px, 5%);
+    
+    font-size: small;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  #readMore, .buyNow, #readLess {
+    padding: 6px 10px;
+    font-size: small;
+    margin-top: 10px;
+  }
+ 
+
+  #bigInfo {
+    display: none;
+  }
+  #smallInfo {
+    display: block;
+  }
+  #map {
+    height: 250px;
+    width: 100%;
+    max-width: none;
+  }
+  #intro-image {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .planVisit {
+    padding: 8px 40px;
+    font-size: 15px;
+  }
+  .ctab {
+    padding: 8px 20px;
+    font-size: 18px;
+    margin-top: 0px;
+  } 
+  .galleryBox {
+    gap: 10px;
+  }
+  #galleryImage {
+    height:170px;
+    max-width: 80%;
+    margin: 0;
+    gap: 0;
+  }
+  .galleryBtn {
+    font-size: 20px;
+    margin: 0;
+  }
+
+}

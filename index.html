@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+
+    
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MonoMuse | Home</title>
+
+</head>
+<body onload="addYear()">
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 id="logo">⊰MonoMuse⊱</h1>
+
+    <nav class="nav_bar">
+      <a href="./index.html">Home</a>
+      
+      <a href="views/explore.html">Explore</a>
+      <a href="views/exhibitions.html">Exhibitions</a>
+      <a href="views/support.html">Support</a>
+      <a href="views/tickets.html" class="cta">Buy Tickets</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </nav>
+  </header>
+
+  
+  <!-- MAIN -->
+  <main class="main"> 
+    <div id="welcome">
+      <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+      <p id="shortIntro">
+      Discover contemporary exhibitions and immersive experiences.
+      Immerse yourself in our diverse collection of monochromatic and contemporary art pieces.
+      </p>
+      <a href="views/tickets.html" class="planVisit">Plan Your Visit</a>
+      
+    </div>
+    <div class="body">
+
+      <div class="intro-section">
+        <img src="static/contempMuseum.jpg" alt="museum interior" id="intro-image">
+        <div>
+          <h3>Discover Our Collection</h3>
+          <p>MonoMuse offers a curated selection of exhibitions that explore art,
+            technology, and human experience. Our collection features works from
+            emerging and established artists, showcasing innovative perspectives on
+            contemporary culture. Visit us to engage with thought-provoking installations
+            and discover unique artistic visions that challenge and inspire.</p>
+          <button id="readMore">Read More</button>
+
+          <p id="longIntro" style="display:none;">
+            
+            Whether you're an art enthusiast, a curious explorer, or someone seeking 
+            inspiration, MonoMuse welcomes you to experience creativity in its most 
+            compelling forms. From interactive digital installations to traditional 
+            monochromatic masterpieces, our museum celebrates the intersection of art 
+            and innovation. Join our community and redefine what contemporary art can be.
+          </p>
+
+          
+          <button id="readLess" style="display:none;">Read Less</button>
+        </div>
+      </div>
+
+      <div class="buy-tickets">
+        <a href="views/tickets.html" class="ctab">Buy Tickets</a>
+      </div>
+      <br>
+      <div class="gallerySection">
+        <h3>Featured Gallery</h3>
+        <div class="galleryBox">
+            <button type="button" class="galleryBtn" onclick="prevSlide()">&lt;</button>
+            <img id="galleryImage" src="./static/techMuseum.jpeg" alt="Featured MonoMuse exhibition image">
+            <button type="button" class="galleryBtn" onclick="nextSlide()">&gt;</button>
+        </div>
+    </div>
+    <br>
+      <h3>Learn More</h3>
+      <div class="video-section">
+        
+        <iframe 
+          src="https://www.youtube.com/embed/MHo928fd2wE?si=-LEySTgcaHF5pnV4" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p id="copyYear"></p>
+  </footer>
+
+</div>
+
+</body>
+</html>

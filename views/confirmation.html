@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Sun">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse ticket order confirmation">
+    <title>MonoMuse | Order Confirmation</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear(); loadConfirmation();">
+<div class="container">
+
+    <header class="header">
+        <h1 id="logo">⊰MonoMuse⊱</h1>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="support.html">Support</a>
+            <a href="tickets.html" class="cta">Buy Tickets</a>
+            <button type="button" class="icon" onclick="toggleNav()">☰</button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="buy">
+            <h2 class="greeting">Order Confirmation</h2>
+        </div>
+
+        <div class="body confirmationBox">
+            <h3>Your Order is Confirmed</h3>
+            <p>Thank you for choosing MonoMuse. Your ticket reservation has been placed successfully.</p>
+
+            <p><strong class="imp">Name:</strong> <span id="confirmName"></span></p>
+            <p><strong class="imp">Email:</strong> <span id="confirmEmail"></span></p>
+            <p><strong class="imp">Visit Date:</strong> <span id="confirmDate"></span></p>
+            <p><strong class="imp">Selected Tickets:</strong></p>
+            <div id="confirmTickets"></div>
+            <p><strong class="imp">Total Quantity:</strong> <span id="confirmQuantity"></span></p>
+            <p><strong class="imp">Total Cost:</strong> <span id="confirmTotal"></span></p>
+            <br>
+            <a href="../index.html" class="ctab">Return Home</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+</body>
+</html>
