@@ -726,5 +726,17 @@ table input {
     font-size: 20px;
     margin: 0;
   }
+  #checkoutLayout{
+    flex-direction: column;
+    justify-content: left;
+
+  }
+  .checkoutRight {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .checkoutLeft{
+    width: 100%;
+  }
 
 }
